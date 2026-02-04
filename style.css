@@ -1,1 +1,117 @@
-/* Add you CSS here */
+/* Basic CSS for single-page portfolio
+	 Simple, beginner-friendly comments and placeholders included
+*/
+
+/* --- Variables & Reset --- */
+:root{
+	--bg: #ffffff;
+	--muted: #6b7280;
+	--text: #111827;
+	--accent: #0b74de;
+	--card: #f8fafc;
+	--radius: 8px;
+	--gap: 20px;
+}
+
+*{box-sizing: border-box}
+html,body{height:100%}
+body{
+	margin:0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	color:var(--text);
+	background:var(--bg);
+	line-height:1.5;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	scroll-behavior: smooth; /* smooth anchor scrolling */
+}
+
+/* Container to center content and limit width */
+.container{
+	width: 94%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 0 24px 0;
+}
+
+/* --- Header / Navigation --- */
+.site-header{position:sticky;top:0;z-index:50}
+.topnav{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	gap:var(--gap);
+	background:rgba(255,255,255,0.96);
+	padding:12px 0;
+	border-bottom:1px solid #eef2f6;
+}
+.brand{font-weight:700;color:var(--accent)}
+.nav-links{list-style:none;margin:0;padding:0;display:flex;gap:12px}
+.nav-links a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:6px}
+.nav-links a:hover{background:#f1f5f9}
+
+/* Responsive nav: collapse into stack on small screens */
+@media (max-width:620px){
+	.nav-links{display:flex;flex-wrap:wrap;gap:8px;font-size:14px}
+}
+
+/* --- Hero --- */
+.hero{padding:56px 0 36px;background:linear-gradient(180deg, #ffffff 0%, #f8fbff 100%)}
+.hero-inner{text-align:center}
+.hero h1{margin:0;font-size:clamp(28px,4.5vw,44px)}
+.accent{color:var(--accent)}
+.lead{color:var(--muted);margin-top:8px}
+.hero-actions{margin-top:18px;display:flex;gap:12px;justify-content:center}
+.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;display:inline-block}
+.btn-outline{background:transparent;border:1px solid rgba(11,116,222,0.12);color:var(--accent)}
+.btn-sm{padding:8px 10px;font-size:14px}
+
+.social{margin-top:18px;display:flex;gap:12px;justify-content:center}
+.social a{color:var(--muted);font-size:20px}
+
+/* --- Sections --- */
+.section{padding:40px 0}
+.section.alt{background:#fbfdff}
+.section h2{margin:0 0 12px;font-size:22px}
+.muted{color:var(--muted);margin-bottom:12px}
+
+/* --- Skills --- */
+.skills-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+.skill{background:var(--card);padding:10px 14px;border-radius:10px;display:flex;align-items:center;gap:10px;min-width:120px}
+.skill i{color:var(--accent);font-size:18px}
+
+/* --- Projects (Flexbox grid) --- */
+.projects-list{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:18px}
+.project-card{background:var(--card);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;flex:1 1 320px;max-width:420px}
+.project-media{background:#e6eefb;color:var(--muted);padding:36px;display:flex;align-items:center;justify-content:center}
+.project-content{padding:16px}
+.project-content h3{margin:0 0 8px}
+.project-actions{display:flex;gap:8px;margin-top:12px}
+
+/* --- Contact form --- */
+.contact-form{display:flex;flex-direction:column;gap:8px;max-width:640px}
+.contact-form label{font-size:14px}
+.contact-form input,.contact-form textarea{padding:10px;border:1px solid #e6eef6;border-radius:8px}
+.contact-form button{width:max-content;margin-top:8px}
+
+/* --- Reflections --- */
+.reflections-list{margin-top:12px;padding-left:18px}
+
+/* --- Footer --- */
+.site-footer{padding:20px 0;background:#fff;border-top:1px solid #eef2f6}
+.site-footer p{margin:0;color:var(--muted);font-size:14px}
+
+/* --- Responsive tweaks --- */
+@media (min-width:700px){
+	.projects-list{justify-content:flex-start}
+}
+
+@media (min-width:1000px){
+	.container{width:92%}
+	.project-card{flex:1 1 calc(33% - 22px);max-width:330px}
+}
+
+/* Small helper utilities */
+.btn:focus,.nav-links a:focus{outline:2px solid rgba(11,116,222,0.18);outline-offset:2px}
+
+/* End of CSS */

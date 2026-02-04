@@ -2,10 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Personal Site</title>
+  <!-- Font Awesome icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1Cm8+6VYf0N1N2x2+g3GkJ6fScmQX2l1q0KqfZ0eQ5qKzTQ1v3jBqYx1p7h2x6kfz6w1r3D3a0z1Y1h2pQv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Sticky navigation bar with anchor links -->
+  <header class="site-header">
+    <nav class="topnav">
+      <div class="brand">Nidhi Lalwani</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reflections">Reflections</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+    <h1>Hello — I'm <span class="accent">Nidhi Lalwani</span></h1>
+    <p class="lead">UI/UX Designer + ITM Grad Student</p>
+    <p class="muted">“Bridging technology, design, and business strategy to build user-centered products.”</p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="#contact">Get in Touch</a>
+      </div>
+      <div class="social">
+        <!-- Social icons -->
+        <a href="https://github.com/" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nini01/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nidhilalwani01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Bio -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="muted">I studied at the University of Texas at Dallas and am currently pursuing graduate studies in IT Management. I focus on the intersection of design and product, bringing product thinking and research-led UX into the design process. I have worked on digital health concepts that connect wearable data and patient records to improve care coordination and user experience. In parallel, I create South Asian-inspired digital artwork that explores cultural narratives and visual storytelling.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <p class="muted">Core skills across design, product, and technical tooling.</p>
+      <div class="skills-list">
+        <!-- Design -->
+        <div class="skill"><i class="fab fa-figma"></i><span>Figma</span></div>
+        <div class="skill"><i class="fa-solid fa-user-check"></i><span>UX Research</span></div>
+        <div class="skill"><i class="fa-solid fa-vector-square"></i><span>Wireframing</span></div>
+        <div class="skill"><i class="fa-solid fa-cube"></i><span>Prototyping</span></div>
+        <div class="skill"><i class="fa-solid fa-puzzle-piece"></i><span>Design Systems</span></div>
+
+        <!-- Product -->
+        <div class="skill"><i class="fa-solid fa-lightbulb"></i><span>Product Thinking</span></div>
+        <div class="skill"><i class="fa-solid fa-chart-line"></i><span>Metrics</span></div>
+        <div class="skill"><i class="fa-solid fa-comments"></i><span>Stakeholder Communication</span></div>
+
+        <!-- Tech -->
+        <div class="skill"><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="skill"><i class="fa-brands fa-js-square"></i><span>Basic JavaScript</span></div>
+        <div class="skill"><i class="fa-solid fa-code"></i><span>C++</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="muted">A selection of projects that highlight UX research, prototyping, and visual design.</p>
+      <div class="projects-list">
+        <!-- HealthBankOne -->
+        <article class="project-card">
+          <div class="project-media">HealthBankOne<br><small class="muted">Digital health records + wearables concept</small></div>
+          <div class="project-content">
+            <h3>HealthBankOne</h3>
+            <p>Concept for unified digital health records and wearable integration to improve patient data continuity and clinician workflows.</p>
+            <p class="muted">Role: UX/UI + research</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm">Live</a>
+              <a href="#" class="btn btn-sm btn-outline">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CareBridge -->
+        <article class="project-card">
+          <div class="project-media">CareBridge<br><small class="muted">Elder-care and health monitoring</small></div>
+          <div class="project-content">
+            <h3>CareBridge</h3>
+            <p>Design and prototype for an elder-care monitoring app, including a friendly mascot to improve adoption and usability testing.</p>
+            <p class="muted">Role: UX/UI + mascot + prototyping</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm">Live</a>
+              <a href="#" class="btn btn-sm btn-outline">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Empower Her -->
+        <article class="project-card">
+          <div class="project-media">Empower Her<br><small class="muted">South Asian art & storytelling campaign</small></div>
+          <div class="project-content">
+            <h3>Empower Her</h3>
+            <p>Visual design and storytelling campaign that centers South Asian women through digital art and narrative-driven visuals.</p>
+            <p class="muted">Role: Visual design + storytelling</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm">Live</a>
+              <a href="#" class="btn btn-sm btn-outline">Repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact (concise contact details only) -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="muted">Reach out via email or LinkedIn. Below are the best ways to contact me.</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:nidhilalwani01@gmail.com">nidhilalwani01@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nini01/" target="_blank">https://www.linkedin.com/in/nini01/</a></p>
+        <p><strong>Location:</strong> Texas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflections / Notes -->
+  <section id="reflections" class="section">
+    <div class="container">
+      <h2>Reflections</h2>
+      <p class="muted">A few notes on process and learning from recent work.</p>
+      <ul class="reflections-list">
+        <li>Prioritize research early — insights guide effective design decisions.</li>
+        <li>Prototype quickly to validate interactions with users and stakeholders.</li>
+        <li>Use visual storytelling to make data and experiences more relatable.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Nidhi Lalwani. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script to keep the year up-to-date
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
